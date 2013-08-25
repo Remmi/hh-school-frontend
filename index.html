@@ -26,92 +26,98 @@
         <div class="header">
             <div class="header-content">
                 <div class="header-content-button">
-                    <div>Добавить</div>
-                    <div>Обновить</div>
+                    <div id="header-content-button-add" onclick="alert('Добавить!')">Добавить</div>
+                    <div id="header-content-button-refresh" onclick="alert('Обновить!')">Обновить</div>
                 </div>
                 <div class="header-content-search">
                     <img src="img/search.png" />
-                    <input type="search" placeholder="Событие, дата или участник" size="34" />
+                    <input id="header-content-search-input" type="search" placeholder="Событие, дата или участник" size="33" />
                 </div>
             </div>
         </div>
         <div class="date">
             <table class="date-nav">
                 <tr>
-                    <td class="date-nav-prev">◂</td>
-                    <td class="date-nav-month">Март 2013</td>
-                    <td class="date-nav-next">▸</td>
-                    <td class="date-nav-today">Сегодня</td>
+                    <td id="date-nav-prev" class="date-nav-prev">◂</td>
+                    <td id="date-nav-month" class="date-nav-month">Март 2013</td>
+                    <td id="date-nav-next" class="date-nav-next">▸</td>
+                    <td id="date-nav-today" class="date-nav-today">Сегодня</td>
                 </tr>
             </table>
-            <table class="date-calendar">
-                <tr>
-                    <td>Понедельник, 25</td>
-                    <td>Вторник, 26</td>
-                    <td>Среда, 27</td>
-                    <td>Четверг, 28</td>
-                    <td>Пятница, 1</td>
-                    <td class="date-today">Суббота, 2</td>
-                    <td>Воскресенье, 3</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td class="date-event">
-                        9
-                        <div class="date-event-title">Напиться!</div>
-                        <div class="date-event-desc">Витя Костин, Петр Михайлов.</div>
-                    </td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td class="date-event">
-                        22
-                        <div class="date-event-title">ДР!</div>
-                        <div class="date-event-desc">Дима Молодцов</div>
-                    </td>
-                    <td>23</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                </tr>
-            </table>
+            <div id="date-calendar">
+
+            </div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>
+
+<!--
+   <table class="date-calendar">
+                    <tr>
+                        <td>Понедельник, 25</td>
+                        <td>Вторник, 26</td>
+                        <td>Среда, 27</td>
+                        <td>Четверг, 28</td>
+                        <td>Пятница, 1</td>
+                        <td class="date-today">Суббота, 2</td>
+                        <td>Воскресенье, 3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td class="date-event">
+                            9
+                            <div class="date-event-title">Напиться!</div>
+                            <div class="date-event-desc">Витя Костин, Петр Михайлов.</div>
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td class="date-event">
+                            22
+                            <div class="date-event-title">ДР!</div>
+                            <div class="date-event-desc">Дима Молодцов</div>
+                        </td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+-->
